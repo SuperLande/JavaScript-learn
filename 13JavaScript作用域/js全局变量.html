@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>Ripplee</title> 
+</head>
+<body>
+
+<p>全局变量在任何脚本和函数内均可访问。</p>
+<p id="demo"></p>
+<script>
+var carName = "Volvo"; // 如果变量在函数内没有生命，直接用了，该变量也是全局变量(实际上就是被自动定义为window的变量而已)
+myFunction();
+function myFunction() 
+{
+    document.getElementById("demo").innerHTML =
+		"我可以显示 " + carName;
+}
+</script>
+
+</body>
+</html>
