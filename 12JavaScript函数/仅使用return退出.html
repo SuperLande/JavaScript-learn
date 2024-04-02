@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<p>本例调用的函数会执行一个计算，然后返回结果：</p>
+<p id="demo"></p>
+<script>
+function myFunction(a,b)
+{
+    if (a>b)
+    {
+        return;
+    }
+    return a+b // 不然就返回a和b的和
+}
+document.getElementById("demo").innerHTML=myFunction(3,4);
+</script>
+
+</body>
+</html>
