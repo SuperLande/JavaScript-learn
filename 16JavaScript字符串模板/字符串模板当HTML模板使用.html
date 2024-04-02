@@ -20,6 +20,7 @@ let tags = ["RUNOOB", "GOOGLE", "TAOBAO"];
 
 let html = `<h2>${header}</h2><ul>`;
 for (const x of tags) {
+    // 将tags中的每一个元素x，都会以`<li>${x}</li>`添加到html字符串中
   html += `<li>${x}</li>`;
 }
 

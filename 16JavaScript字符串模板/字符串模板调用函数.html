@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ripplee</title>
+</head>
+<body>
+
+<h2>JavaScript 模板字面量</h2>
+
+<p>模板字面量使用反引号 (``) 来定义一个字符串:</p>
+
+<pre id="demo"></pre>
+
+<p>Internet Explorer 不支持模板字面量。</p>
+
+<script>
+const name = "John";
+const age = 31;
+const job = "Web Developer";
+const city = "Beijing";
+
+function hello() {
+  return "Hello";
+}
+
+let str = `
+Name:${name}
+age:${age}
+job:${job}
+city:${city}
+calc:${2+2}
+function:${hello()}
+sanmu: ${age > 30 ? 'over 30': 'under 30' }
+`
+document.getElementById("demo").innerHTML = str;
+</script>
+</body>
+</html>
