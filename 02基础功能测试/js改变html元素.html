@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>js改变html元素的内容</title> 
+</head>
+<body>
+<h1>改变一下！</h1>
+<p id="demo">
+JavaScript 能改变 HTML 元素的内容。
+</p>
+<script>
+function myFunction()
+{
+    // getElementById是一个DOM（文档对象模型）操作方法
+    // 用于选择ID为 demo 的HTML元素
+    // 如果在文档中存在ID为 demo 的元素
+    // 该元素的引用就会被赋值给变量 x
+    // 如果不存在，x 将得到 null。
+	x=document.getElementById("demo");  // 找到元素
+    //innerHTML 是一个属性
+    // 允许获取或设置与元素关联的HTML或XML内容
+    // 在这里，它用于修改元素的内容
+    // 如果 x 是一个有效的元素引用
+    // 它的内容会被替换为 "Hello JavaScript!"。
+	x.innerHTML="Hello JavaScript!";    // 改变内容
+}
+</script>
+<button type="button" onclick="myFunction()">点击这里</button>
+</body>
+</html>
