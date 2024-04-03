@@ -1,4 +1,6 @@
-#### JavaScriptLearnRecord ![Language](https://img.shields.io/badge/language-c++-brightgreen) ![License](https://img.shields.io/badge/license-MIT-yellow) #静态badge图标
+## JavaScriptLearnRecord ![Language](https://img.shields.io/badge/language-JavaScript-brightgreen) ![License](https://img.shields.io/badge/license-MIT-yellow)
+---
+
 
 #### Installation
 ```
