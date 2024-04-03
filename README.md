@@ -1,10 +1,11 @@
-# JavaScript-learn
+#### JavaScriptLearnRecord ![Language](https://img.shields.io/badge/language-c++-brightgreen) ![License](https://img.shields.io/badge/license-MIT-yellow) #静态badge图标
 
-#### 介绍
-一个用于学习javascript的仓库
+#### Installation
+```
+没有代码就没有bug
+```
 
-#### 软件架构
-软件架构说明
+#### 
 
 
 #### 安装教程
