@@ -3,6 +3,7 @@
  <h2 align="center">Ripplee's JavaScript Record</h2>
  <p align="center">Start learn with me!</p>
 </p>
+
 ---
 ![Language](https://img.shields.io/badge/language-JavaScript-brightgreen) ![License](https://img.shields.io/badge/license-MIT-yellow)
 #### Installation
