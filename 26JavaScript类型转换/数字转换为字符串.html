@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>数字转换为字符串</title>
+</head>
+<body>
+
+<p> String() 方法可以将数字转换为字符串。</p>
+<p id="demo"></p>
+<script>
+var x = 123;
+document.getElementById("demo").innerHTML =
+    String(x) + "<br>" +
+    String(123) + "<br>" +
+    String(100 + 23);
+// toString方法也可以
+// document.getElementById("demo").innerHTML =
+//     x.toString() + "<br>" +
+//    (123).toString() + "<br>" +
+//    (100 + 23).toString();
+</script>
+</body>
+</html>

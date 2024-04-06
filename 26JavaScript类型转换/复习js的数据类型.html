@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>数据类型复习</title>
+</head>
+<body>
+<p>看下这些变量的数据类型，好吧</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = 
+        typeof "john" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof NaN + "<br>" +
+        typeof false + "<br>" +
+        typeof [1,2,3,4] + "<br>" +
+        typeof {name:'john', age:34} + "<br>" +
+        typeof new Date() + "<br>" +
+        typeof function () {} + "<br>" +
+        typeof myCar + "<br>" +
+        typeof null;
+        //如果对象是 JavaScript Array 或 JavaScript Date ，我们就无法通过 typeof 来判断他们的类型，因为都是 返回 object
+    </script>
+
+</body>
+</html>
