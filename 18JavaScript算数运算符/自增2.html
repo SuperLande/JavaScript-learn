@@ -6,19 +6,19 @@
 </head>
 <body>
 
-<p>设置 y=7, 计算出 x=++y, 并显示结果。</p>
+<p>设置 y=5, 计算出 x=y++, 并显示结果。</p>
 <button onclick="myFunction()">点我</button>
 <p id="demo"></p>
 <script>
 function myFunction()
 {
-	var y=7;
-	var x=++y;
+	var y=5;
+	var x=y++;
 	var demoP=document.getElementById("demo")
 	demoP.innerHTML="x=" + x + ", y=" + y;
 }
 </script>
-<p><strong>注意:</strong>两个值 x 和 y 都受到影响。</p>
+<p><strong>注意:</strong> x 和 y 两个值都受到影响。</p>
 	
 </body>
 </html>

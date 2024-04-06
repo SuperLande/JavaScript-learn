@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>逻辑运算符测试</title> 
+</head>
+<body>
+<p>给定x=6,y=3，检测x小于10和y大于1是否同时符合</p>
+<button onclick="myFunction()">点击按钮</button>
+<p id="demo"></p>
+<p>给定x=6,y=3，检测x是否等于5或y是否等于5</p>
+<button onclick="myFunction2()">点击按钮</button>
+<p id="demo2"></p>
+<p>给定x=6,y=3，检测x==y的反值</p>
+<button onclick="myFunction3()">点击按钮</button>
+<p id="demo3"></p>
+<script>
+function myFunction()
+{
+    var x=6;
+    var y=3;
+    document.getElementById("demo").innerHTML=x < 10 && y > 1;
+}
+function myFunction2()
+{
+    var x=6;
+    var y=3;
+    document.getElementById("demo2").innerHTML=x==5 || y==5;
+}
+function myFunction3()
+{
+    var x=6;
+    var y=3;
+    document.getElementById("demo3").innerHTML=!(x==y);
+}
+</script>
+
+</body>
+</html>

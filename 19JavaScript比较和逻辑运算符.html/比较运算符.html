@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>Ripplee</title> 
+</head>
+<body>
+
+<p>x=5, 返回 x==8 （等于）的比较值结果。</p>
+<button onclick="myFunction()">尝试一下</button>
+<p id="demo"></p>
+<p>x=5, 返回 x===5 （绝对等于）的比较值结果。</p>
+<button onclick="myFunction2()">尝试一下</button>
+<p id="demo2"></p>
+<p>x=5, 返回 x!=5 （不等于）的比较值结果。</p>
+<button onclick="myFunction3()">尝试一下</button>
+<p id="demo3"></p>
+<p>x=5, 返回 x!==5 （不绝对等于）的比较值结果。</p>
+<button onclick="myFunction4()">尝试一下</button>
+<p id="demo4"></p>
+<p>x=5, 返回 x!=="5" （不绝对等于）的比较值结果。</p>
+<button onclick="myFunction5()">尝试一下</button>
+<p id="demo5"></p>
+<p>x=5, 返回 x>4 （大于）的比较值结果。</p>
+<button onclick="myFunction6()">尝试一下</button>
+<p id="demo6"></p>
+<p>x=5, 返回 x>=5 （大于等于）的比较值结果。</p>
+<button onclick="myFunction7()">尝试一下</button>
+<p id="demo7"></p>
+<script>
+function myFunction()
+{
+	var x=5;
+	document.getElementById("demo").innerHTML=x==8;
+}
+function myFunction2()
+{
+	var x=5;
+	document.getElementById("demo2").innerHTML=x===5;
+}
+function myFunction3()
+{
+	var x=5;
+	document.getElementById("demo3").innerHTML=x!=5;
+}
+function myFunction4()
+{
+	var x=5;
+	document.getElementById("demo4").innerHTML=x!==5;
+}
+function myFunction5()
+{
+	var x=5;
+	document.getElementById("demo5").innerHTML=x!=="5";
+}
+function myFunction6()
+{
+	var x=5;
+	document.getElementById("demo6").innerHTML=x>4;
+}
+function myFunction7()
+{
+	var x=5;
+	document.getElementById("demo7").innerHTML=x>=5;
+}
+</script>
+
+</body>
+</html>
