@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简单科学计算器</title>
+<script>
+function calculate() {
+    var result;
+    try {
+        // 获取用户输入的表达式
+        var expression = document.getElementById('expression').value;
+        // 计算结果，使用eval慎用，确保输入安全
+        result = eval(expression);
+    } catch (error) {
+        result = '错误的输入';
+    }
+    document.getElementById('result').innerText = "结果: " + result;
+}
+
+function insert(value) {
+    document.getElementById('expression').value += value;
+}
+
+function clearInput() {
+    document.getElementById('expression').value = '';
+    document.getElementById('result').innerText = '结果: ';
+}
+// 自动补全括号函数
+function autoCompleteBracket() {
+    var inputField = document.getElementById('expression');
+    var functions = ['Math.sqrt', 'Math.log', 'Math.exp']; // 定义需要补全括号的函数列表
+
+    functions.forEach(function(func) {
+        if (inputField.value.includes(func + "(") && !inputField.value.includes(func + "()")) {
+            inputField.value = inputField.value.replace(func + "(", func + "()");
+            // 将光标移动到括号内
+            var cursorPos = inputField.value.indexOf(func + "()") + func.length + 1;
+            inputField.focus();
+            inputField.setSelectionRange(cursorPos, cursorPos);
+        }
+    });
+}
+</script>
+</head>
+<body>
+<h1>简单科学计算器</h1>
+<input type="text" id="expression" placeholder="输入表达式" style="width: 300px;">
+<div>
+    <button onclick="insert('1')">1</button>
+    <button onclick="insert('2')">2</button>
+    <button onclick="insert('3')">3</button>
+    <button onclick="insert('+')">+</button><br>
+    <button onclick="insert('4')">4</button>
+    <button onclick="insert('5')">5</button>
+    <button onclick="insert('6')">6</button>
+    <button onclick="insert('-')">-</button><br>
+    <button onclick="insert('7')">7</button>
+    <button onclick="insert('8')">8</button>
+    <button onclick="insert('9')">9</button>
+    <button onclick="insert('*')">*</button><br>
+    <button onclick="insert('0')">0</button>
+    <button onclick="insert('.')">.</button>
+    <button onclick="insert('/')">/</button>
+    <button onclick="insert('**')">^</button><br>
+    <button onclick="insert('Math.sqrt(')">sqrt</button>
+    <button onclick="insert('Math.log(')">ln</button>
+    <button onclick="insert('Math.exp(')">exp</button>
+    <button onclick="clearInput()">C</button>
+</div>
+<button onclick="calculate()" style="width: 300px; height: 50px;">计算</button>
+<p id="result">结果: </p>
+</body>
+</html>
