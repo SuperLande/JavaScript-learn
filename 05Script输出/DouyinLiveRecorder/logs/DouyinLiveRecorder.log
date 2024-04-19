@@ -1,0 +1,6 @@
+2024-04-15 15:27:22.311 | WARNING  | utils:wrapper:18 - 错误信息: type: JSONDecodeError, Expecting value: line 1 column 1 (char 0) in function get_douyin_stream_data at line: 355
+2024-04-15 15:27:22.319 | WARNING  | utils:wrapper:18 - 错误信息: type: AttributeError, 'list' object has no attribute 'get' in function get_douyin_stream_url at line: 275
+2024-04-15 15:27:22.319 | WARNING  | __main__:start_record:1345 - 错误信息: 'list' object has no attribute 'get' 发生错误的行数: 974
+2024-04-15 15:43:23.015 | WARNING  | utils:wrapper:18 - 错误信息: type: ValueError, unknown url type: '' in function dingtalk at line: 373
+2024-04-15 15:50:52.614 | WARNING  | utils:wrapper:18 - 错误信息: type: ValueError, unknown url type: '' in function dingtalk at line: 373
+2024-04-15 15:59:53.034 | WARNING  | utils:wrapper:18 - 错误信息: type: ValueError, unknown url type: '' in function dingtalk at line: 373

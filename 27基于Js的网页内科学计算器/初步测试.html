@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>基于Math的复杂数学计算器</title> 
+</head>
+<body>
+<h1>王庆牌科学计算器</h1>
+<h1>计算幂</h1>
+<div>
+    <label for="base">基数：</label>
+    <input type="number" id="base" placeholder="请输入基数">
+</div>
+<div>
+    <label for="exponent">指数：</label>
+    <input type="number" id="exponent" placeholder="请输入指数">
+</div>
+<button onclick="calculatePower()">计算</button>
+<p id="result"></p>
+<h1>计算绝对值</h1>
+<div>
+    <label for="abscalc">数字：</label>
+    <input type="number" id="abscalc" placeholder="请输入数字">
+</div>
+<button onclick="calculateAbs()">计算</button>
+<p id="result2"></p>
+<h1>输出自然对数的底数e</h1>
+<div>
+    <label for="enumber">自然对数的底数e</label>
+</div>
+<button onclick="calculateEnumber()">开始打印</button>
+<p id="result3"></p>
+<script>
+function calculatePower() {
+    // 获取用户输入的基数和指数
+    var base = document.getElementById('base').value;
+    var exponent = document.getElementById('exponent').value;
+
+    // 计算结果
+    var result = Math.pow(base, exponent);
+
+    // 显示结果
+    document.getElementById('result').innerText = "结果是：" + result;
+}
+function calculateAbs(){
+    // 获取用户输入的数字
+    var base = document.getElementById('abscalc').value;
+    var result = Math.abs(base);
+    document.getElementById('result2').innerText = "结果是: " + result;
+}
+function calculateEnumber(){
+    //等待用户点击
+    var result = Math.E
+    document.getElementById('result3').innerHTML = "自然对数的底数是: " + result; 
+}
+</script>
+</body>
+</html>
